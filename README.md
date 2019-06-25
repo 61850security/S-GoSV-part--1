@@ -1,6 +1,14 @@
 # S-GoSV-part-1
 
+### Citing S-GoSV-part-1
+We request that publications derived from the use of S-GoSV-part-1, explicitly acknowledge that fact by citing the appropriate paper and the library itself.
 
+#### Papers:
+
+S.M. Suhail Hussain, S.M. Farooq and Taha Selim Ustun, “Analysis and Implementation of Message Authentication Code (MAC) Algorithms for GOOSE Message Security”,  IEEE Access, 2019. DOI:10.1109/ACCESS.2019.2923728
+
+
+## Documentation
 Signature generation programs:
 1. RSA_PKCS1_V1_5.sh
 	This program contains collection of openSSL statements that generates pair of RSA private and public keys with 1024 key sizes. Then GOOSE APDU data is taken as a text file to generate hash using Secure Hash Algorithm (SHA256). The size of GOOSE APDU is 137 bytes. Further, the generated hash is signed by RSA private key to produce signature of length 128 bytes. Shell program prints the final signature in hexadecimal form. Finally, it is verified by corresponding RSA public key. 
